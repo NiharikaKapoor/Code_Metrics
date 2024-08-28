@@ -70,8 +70,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Contact
 
-For questions or feedback, please contact [your.email@example.com](mailto:your.email@example.com).
+For questions or feedback, please contact [niharikakapoor864@gmail.com](mailto:your.email@example.com).
 
----
-
-This README should provide a solid foundation for your "Code Metrics" project on GitHub, giving potential users and contributors clear instructions and insight into the tool's capabilities.
