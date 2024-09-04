@@ -12,7 +12,6 @@ struct CheckResult {
     int printfCount;
     int scanfCount;
     int functionCount;
-    // Removed unused fields
 };
 
 void initCheckResult(struct CheckResult *result) {
