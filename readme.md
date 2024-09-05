@@ -1,6 +1,6 @@
 # Code Metrics
 
-**Code Metrics** is a comprehensive tool designed to analyze and provide detailed metrics on C source code files. The tool evaluates various aspects of the code, including function usage, variable types, bracket matching, and potential errors. Additionally, it can integrate with the Gemini API to evaluate the time complexity and space complexity of the code provided by the user.
+**Code Metrics** is a comprehensive tool designed to analyze and provide detailed metrics on C source code files.The tool analyzes C code to count functions, variables, and specific keywords, as well as identify bracket errors.Additionally, it can integrate with the Gemini API to evaluate the time complexity and space complexity of the code provided by the user.
 
 ## Features
 
@@ -20,7 +20,86 @@
 - **Time Complexity Estimation**:
   - Integrates with the Gemini API to estimate the time complexity of the provided code.
 
+- **Space Complexity Estimation**:
+- Integrates with the Gemini API to estimate the space complexity of the provided code.
+
+
 ## Installation
+
+Follow these steps to install and run the project:
+
+### Step 1: Clone the Repository
+
+Clone the repository to your local machine:
+
+```sh
+git clone https://github.com/yourusername/Code-Metrics.git
+cd Code-Metrics
+```
+
+### Step 2: Install Dependencies
+
+Install the necessary dependencies:
+
+```sh
+sudo apt-get update
+sudo apt-get install gcc libcurl4-openssl-dev
+```
+
+### Step 3: Compile the Project
+
+Compile the source code using `gcc`:
+
+```sh
+gcc -o code_metrics code_metrics.c -lcurl
+```
+
+### Step 4: Set Up API Key
+
+Make sure you have your Gemini API key and set it as an environment variable:
+
+```sh
+export GEMINI_API_KEY="your_api_key_here"
+```
+
+### Step 5: Run the Program
+
+Run the program by providing the C file you want to analyze:
+
+```sh
+./code_metrics your_code_file.c
+```
+
+Alternatively, you can execute the program without specifying the file name initially, and it will prompt you to enter it:
+
+```sh
+./code_metrics
+```
+
+### Step 6: Analyze the Output
+
+The program provides detailed metrics about the input code, including:
+
+- Total number of lines, built-in functions, and variables.
+- Information about different types of functions and variable usage.
+- Bracket mismatches and their locations.
+- Time and space complexity of the analyzed code snippet (using the Gemini API).
+
+## Troubleshooting
+
+- **API Key Not Set**: Make sure your `GEMINI_API_KEY` environment variable is correctly set. Run `echo $GEMINI_API_KEY` to verify.
+- **libcurl Not Installed**: Ensure that `libcurl4-openssl-dev` is installed.
+
+## Contributing
+
+If you'd like to contribute, please fork the repository and use a feature branch. Pull requests are welcome!
+
+## License
+
+This project is licensed under the MIT License.
+
+
+<!-- ## Installation
 
 ### Prerequisites
 
@@ -67,7 +146,7 @@ Contributions are welcome! Please fork the repository and submit a pull request 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
+ -->
 ## Contact
 
 For questions or feedback, please contact [niharikakapoor864@gmail.com](mailto:your.email@example.com).
