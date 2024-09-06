@@ -100,6 +100,10 @@ The program provides detailed metrics about the input code, including:
 - Bracket mismatches and their locations.
 - Time and space complexity of the analyzed code snippet (using the Gemini API).
 
+## Sample Output
+
+![Results](https://github.com/user-attachments/assets/f716daa9-bb04-40a5-b17a-e471a9ac8900)
+
 ## Troubleshooting
 
 - **API Key Not Set**: Make sure your `GEMINI_API_KEY` environment variable is correctly set. Run `echo $GEMINI_API_KEY` to verify.
@@ -117,6 +121,3 @@ This project is licensed under the MIT License.
 
 For questions or feedback, please contact [niharikakapoor864@gmail.com](mailto:your.email@example.com).
 
-## Sample Output
-
-![Results](https://github.com/user-attachments/assets/f716daa9-bb04-40a5-b17a-e471a9ac8900)
