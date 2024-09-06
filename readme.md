@@ -82,14 +82,13 @@ export GEMINI_API_KEY="your_api_key_here"
 Run the program by providing the C file you want to analyze:
 
 ```sh
-./code_metrics your_code_file.c
+gcc -c complexity.c -o complexity -lcurl
+gcc -c metrics.c -o metrics
+ar rcs lib.a complexity metrics
+gcc -o Code_Metrics main.c -L. lib.a -lcurl
+./Code_Metrics your_code_file.c
 ```
 
-Alternatively, you can execute the program without specifying the file name initially, and it will prompt you to enter it:
-
-```sh
-./code_metrics
-```
 
 ### Step 6: Analyze the Output
 
