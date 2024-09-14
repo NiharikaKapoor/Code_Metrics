@@ -84,7 +84,7 @@ Run the program by providing the C file you want to analyze:
 ```sh
 gcc -c ./implementation/complexity.c -o complexity -lcurl
 gcc -c ./implementation/metrics.c -o metrics
-ar rcs lib.a ./implementation/complexity ./implementation/metrics
+ar rcs lib.a complexity metrics
 gcc -o Code_Metrics main.c -L. lib.a -lcurl
 ./Code_Metrics your_code_file.c
 ```
